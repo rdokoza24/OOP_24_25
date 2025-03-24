@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ABSTRACTION/ABSTRACTION.iml" filepath="$PROJECT_DIR$/ABSTRACTION/ABSTRACTION.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ADDITIONAL/ADDITIONAL.iml" filepath="$PROJECT_DIR$/ADDITIONAL/ADDITIONAL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FUNDAMENTALS/FUNDAMENTALS.iml" filepath="$PROJECT_DIR$/FUNDAMENTALS/FUNDAMENTALS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/OOP_24_25.iml" filepath="$PROJECT_DIR$/.idea/OOP_24_25.iml" />
+    </modules>
+  </component>
+</project>
