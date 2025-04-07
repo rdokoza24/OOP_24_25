@@ -10,9 +10,6 @@ public abstract class MediaDevice implements Playable {
         this.model = model;
     }
 
-    public abstract void turnOnDevice();
+    protected abstract void initializeBaseMediaDevice();
 
-    public void initializeBaseMediaDevice(){
-        System.out.println("Initializing base media device.");
-    }
 }
