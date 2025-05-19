@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.io.BufferedWriter;
 import java.util.ArrayList;
 
 public class ViewPanel extends JPanel {
@@ -37,7 +38,7 @@ public class ViewPanel extends JPanel {
 
     public void addPackContentToTextArea(ArrayList<String> texts) {
         addTextToTextArea("========= Pack =========");
-        for(String text : texts){
+        for (String text : texts) {
             addTextToTextArea(text);
         }
     }

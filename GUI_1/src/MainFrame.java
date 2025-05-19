@@ -8,6 +8,7 @@ public class MainFrame extends JFrame {
     private FormPanel formPanel;
     private ToolBar toolBar;
     private ArrayList<String> textViewPanel;
+    private String filePath = "viewPanelData.txt";
 
     public MainFrame() {
         super("Simple GUI App");
@@ -59,6 +60,15 @@ public class MainFrame extends JFrame {
                     viewPanel.clearViewPanel();
                 }
                 if (textArea == "pack"){
+                    viewPanel.clearViewPanel();
+                    viewPanel.addPackContentToTextArea(textViewPanel);
+                }
+                if (textArea == "saveb"){
+                    AUX_CLS.saveToBinFile(textViewPanel, filePath);
+                    JOptionPane.showMessageDialog(MainFrame.this, "Saved to bin file","Succes", JOptionPane.INFORMATION_MESSAGE);
+                    }
+                if (textArea == "loadb"){
+                    textViewPanel = AUX_CLS.loadFromBinFile(filePath);
                     viewPanel.clearViewPanel();
                     viewPanel.addPackContentToTextArea(textViewPanel);
                 }

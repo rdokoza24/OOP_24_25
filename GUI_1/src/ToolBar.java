@@ -8,12 +8,13 @@ public class ToolBar extends JPanel implements ActionListener {
 
     private JButton clearText;
     private JButton packAllText;
+    private JButton toBin;
+    private JButton loadBinText;
     private ToolBarListener toolBarListener;
 
     public ToolBar() {
         initComps();
         layoutComps();
-        activateToolBar();
     }
 
     public void setToolBarListener(ToolBarListener toolBarListener) {
@@ -24,10 +25,16 @@ public class ToolBar extends JPanel implements ActionListener {
 
         clearText = new JButton("Clear text!");
         packAllText = new JButton("Pack all text!");
+        toBin = new JButton("Save to bin file!");
+        loadBinText = new JButton("Load bin file!");
         clearText.addActionListener(this);
         packAllText.addActionListener(this);
+        toBin.addActionListener(this);
+        loadBinText.addActionListener(this);
         clearText.setActionCommand("clear");
         packAllText.setActionCommand("pack");
+        toBin.setActionCommand("saveb");
+        loadBinText.setActionCommand("loadb");
     }
 
     private void layoutComps() {
@@ -35,10 +42,10 @@ public class ToolBar extends JPanel implements ActionListener {
         setLayout(new FlowLayout(FlowLayout.LEFT));
         add(clearText);
         add(packAllText);
+        add(toBin);
+        add(loadBinText);
     }
 
-    private void activateToolBar() {
-    }
 
     @Override
     public void actionPerformed(ActionEvent e) {
